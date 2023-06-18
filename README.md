@@ -2,7 +2,7 @@
 
 En este reporsitorio voy a tener los challenges de frontend mentor.
 
-##Tecnologias que voy a utilizar
+## Tecnologias que voy a utilizar
 
 - HTML
 - CSS
