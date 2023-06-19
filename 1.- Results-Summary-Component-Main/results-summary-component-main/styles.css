@@ -1,0 +1,217 @@
+:root{
+    /* Primary */
+
+    --LightRed: hsla(0, 100%, 67%);
+    --LightRedBackground: hsla(0, 100%, 67%, 0.1
+    );
+
+    --OrangeYellow: hsl(39, 100%, 56%);
+    --OrangeYellowBackground: hsl(39, 100%, 56%,.1);
+
+    --GreenTeal: hsl(166, 100%, 37%);
+    --GreenTealBackground: hsl(166, 100%, 37%, .1);
+
+    --CobaltBlue: hsl(234, 85%, 45%);
+    --CobaltBlueBackground: hsl(234, 85%, 45%, .1);
+
+
+/* Gradients */
+
+    --LightSlateBlue: hsl(252, 100%, 67%); /* bg */
+    --LightRoyalBlue: hsla(241, 81%, 54%, 0.094);   /* bg */
+
+    --VioletBlue: hsla(256, 72%, 46%, 1); /*circle*/
+    --PersianBlue: hsla(241, 72%, 46%, 1);
+
+
+
+/*  Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    width: 1440px;
+    height: 1880px;
+    margin: 0 auto;
+    padding: 284px 352px;
+    background-color: var(--DarkGrayBlue);
+
+}
+
+.mainContainer{
+    width: 736px;
+    height: 512px;
+    display: flex;
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-bottom: 20px;
+
+}
+
+/* parte azul */
+.results{
+    width: 368px;
+    height: 100%;
+    background: linear-gradient(var(--LightSlateBlue), var(--PersianBlue));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    padding: 60px;
+    gap: 20px;
+}
+
+.results .title{
+    color: var(--LightLavender);
+    font-size: 18px;
+}
+
+.results .circle{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient( var(--PersianBlue), var(--LightRoyalBlue));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.grade{
+    font-size: 50px;
+    color: var(--White);
+}
+
+.totalGradeResults{
+    color: var(--LightLavender);
+    
+    font-size: 15px;
+}
+
+.great{
+    font-size: 25px;
+    color: var(--White);
+}
+
+.descriptionGrade{
+    color: var(--LightLavender);
+    font-size: 15px;
+    width: 85%;
+
+}
+
+
+/* parte blanca */
+
+.summary{
+    background-color: white;
+    width: 368px;
+    padding: 50px;
+    font-size: 15px;
+}
+
+.summary h2{
+    margin-bottom: 25px;
+}
+
+.gradesContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.topicContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+img{
+    margin-right: 10px;
+    
+}
+
+.topicContainer p{
+    display: flex;
+    
+}
+
+.reaction{
+    background-color: var(--LightRedBackground);
+    color: var(--LightRed);
+}
+
+.memory{
+    background-color: var(--OrangeYellowBackground);
+    color: var(--OrangeYellow);
+
+}
+
+.verbal{
+    background-color: var(--GreenTealBackground);
+    color: var(--GreenTeal);
+
+}
+
+.visual{
+    background-color: var(--CobaltBlueBackground);
+    color: var(--CobaltBlue);
+}
+
+.gradeByTopic{
+    color: rgba(0, 0, 0, 0.724);
+    font-weight: 800;
+}
+
+.totalGrade{
+    color: rgb(120, 120, 120);
+    font-weight: 800;
+
+}
+
+.continueButton{
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 50px;
+    padding: 15px;
+    color: var(--White);
+    background-color: var(--DarkGrayBlue);
+    border: none;
+    cursor: pointer;
+}
+
+.continueButton:hover{
+    background: linear-gradient(var(--LightSlateBlue), var(--PersianBlue));
+}
+
+
+
+
+
+/* pie de pagina */
+.attribution { 
+    font-size: 20px; 
+    text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
