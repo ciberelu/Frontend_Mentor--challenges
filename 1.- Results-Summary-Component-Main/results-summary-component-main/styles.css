@@ -58,6 +58,9 @@ body{
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     margin-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: 40px 10px 100px rgba(227, 227, 227, 0.215);
+
 
 }
 
@@ -123,6 +126,7 @@ body{
     width: 368px;
     padding: 50px;
     font-size: 15px;
+    border-radius: 25px;
 }
 
 .summary h2{
